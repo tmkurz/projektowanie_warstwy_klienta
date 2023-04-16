@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <script>
+    let numericArray = [1, 2, 3];
+    let textArray = ['one', 'two', 'three'];
+    let booleanArray = [true, false, true];
+    let mixArray = [1, 'two', true];
+
+    console.log('Tablica numerArray');
+    console.log(numericArray);
+
+    console.log('Tablica textArray');
+    console.log(textArray);
+
+    console.log('Tablica booleanArray');
+    console.log(booleanArray);
+
+    console.log('Tablica mixArray');
+    console.log(mixArray);
+
+    console.log('Trzeci element z textArray');
+    console.log(textArray[2]);
+
+    console.log('Tablica numericArray po modyfikacji drugiego elementu');
+    numericArray[1] = 400;
+    console.log(numericArray);
+
+    console.log('Element z tablicy numericArray spoza zakresu');
+    console.log(numericArray[-1]);
+
+    console.log('Czy tablica numericArray zawiera wartość 1');
+    console.log(numericArray.includes(1));
+
+    console.log('Czy tablica numericArray zawiera wartość 1000');
+    console.log(numericArray.includes(1000));
+
+    console.log('Tablica numericArray po dodaniu elementu na koniec');
+    numericArray.push(100);
+    console.log(numericArray);
+
+    console.log('Typ zmiennej numericArray');
+    console.log(typeof numericArray);
+
+    console.log('Liczba elementów tablicy numericArray');
+    console.log(numericArray.length);
+
+
+
+  </script>
+
+</head>
+<body>
+
+</body>
+</html>
