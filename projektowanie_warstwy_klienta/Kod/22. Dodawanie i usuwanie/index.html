@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selektory</title>
+    <link rel="stylesheet" href="template.css">
+    <script>
+        setTimeout(function () {
+            let element = document.createElement('div');
+            element.textContent = '5';
+
+            document.getElementById('big-box').appendChild(element);
+
+
+        }, 2000);
+
+        setTimeout(function () {
+            let element = document.getElementById('box-two');
+
+            let parentElement = document.getElementById('big-box');
+            parentElement.removeChild(element);
+
+        }, 4000);
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+  <div id="box-one"></div>
+  <div class="boxes"></div>
+
+  <div id="big-box">
+      <div>1</div>
+      <div id="box-two">
+          2
+          <div></div>
+      </div>
+      <div>3</div>
+      <div class="boxes">4</div>
+  </div>
+
+</body>
+</html>
